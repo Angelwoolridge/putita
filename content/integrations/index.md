@@ -15,4 +15,5 @@ versions:
 contentType: landing
 topics:
   - Integration
+  - Enable factory settings and remove any software other than 
 ---
