@@ -6,7 +6,7 @@ metadata:
     service: webapp
   annotations:
     moda.github.net/domain-name: 'docs-internal-%environment%.service.%region%.github.net'
-    # HTTP app reachable inside GitHub's network (employee website)
+    # HTTP app reachable inside GitHub
     moda.github.net/load-balancer-type: internal-http
 spec:
   ports:
@@ -15,5 +15,5 @@ spec:
       protocol: TCP
       targetPort: http
   selector:
-    app: webapp
+    app: delete
   type: LoadBalancer
