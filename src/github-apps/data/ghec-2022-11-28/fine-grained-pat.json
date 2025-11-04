@@ -1129,6 +1129,30 @@
   ],
   "billing": [
     {
+      "slug": "get-all-budgets-for-an-organization",
+      "subcategory": "enhanced-billing",
+      "verb": "get",
+      "requestPath": "/organizations/{org}/settings/billing/budgets"
+    },
+    {
+      "slug": "get-a-budget-by-id-for-an-organization",
+      "subcategory": "enhanced-billing",
+      "verb": "get",
+      "requestPath": "/organizations/{org}/settings/billing/budgets/{budget_id}"
+    },
+    {
+      "slug": "update-a-budget-for-an-organization",
+      "subcategory": "enhanced-billing",
+      "verb": "patch",
+      "requestPath": "/organizations/{org}/settings/billing/budgets/{budget_id}"
+    },
+    {
+      "slug": "delete-a-budget-for-an-organization",
+      "subcategory": "enhanced-billing",
+      "verb": "delete",
+      "requestPath": "/organizations/{org}/settings/billing/budgets/{budget_id}"
+    },
+    {
       "slug": "get-billing-premium-request-usage-report-for-an-organization",
       "subcategory": "enhanced-billing",
       "verb": "get",
@@ -1139,6 +1163,12 @@
       "subcategory": "enhanced-billing",
       "verb": "get",
       "requestPath": "/organizations/{org}/settings/billing/usage"
+    },
+    {
+      "slug": "get-billing-usage-summary-for-an-organization",
+      "subcategory": "enhanced-billing",
+      "verb": "get",
+      "requestPath": "/organizations/{org}/settings/billing/usage/summary"
     },
     {
       "slug": "get-github-actions-billing-for-an-organization",
@@ -1193,6 +1223,12 @@
       "subcategory": "enhanced-billing",
       "verb": "get",
       "requestPath": "/users/{username}/settings/billing/usage"
+    },
+    {
+      "slug": "get-billing-usage-summary-for-a-user",
+      "subcategory": "enhanced-billing",
+      "verb": "get",
+      "requestPath": "/users/{username}/settings/billing/usage/summary"
     }
   ],
   "branches": [
@@ -4049,18 +4085,6 @@
   ],
   "projects-classic": [
     {
-      "slug": "list-organization-projects",
-      "subcategory": "projects",
-      "verb": "get",
-      "requestPath": "/orgs/{org}/projects"
-    },
-    {
-      "slug": "create-an-organization-project",
-      "subcategory": "projects",
-      "verb": "post",
-      "requestPath": "/orgs/{org}/projects"
-    },
-    {
       "slug": "get-a-project-column",
       "subcategory": "columns",
       "verb": "get",
@@ -4083,24 +4107,6 @@
       "subcategory": "columns",
       "verb": "post",
       "requestPath": "/projects/columns/{column_id}/moves"
-    },
-    {
-      "slug": "get-a-project",
-      "subcategory": "projects",
-      "verb": "get",
-      "requestPath": "/projects/{project_id}"
-    },
-    {
-      "slug": "update-a-project",
-      "subcategory": "projects",
-      "verb": "patch",
-      "requestPath": "/projects/{project_id}"
-    },
-    {
-      "slug": "delete-a-project",
-      "subcategory": "projects",
-      "verb": "delete",
-      "requestPath": "/projects/{project_id}"
     },
     {
       "slug": "list-project-collaborators",
