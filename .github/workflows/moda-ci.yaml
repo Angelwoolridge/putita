@@ -43,8 +43,7 @@ jobs:
       fail-fast: false
       matrix:
         ci_job: [{ 'job': 'docs-internal-moda-config-bundle' }]
-    uses: github/internal-actions/.github/workflows/moda.yml@main
-    with:
+    
       ci-formatted-job-name: ${{ matrix.ci_job.job }}
       vault-keys: ${{ needs.set-vault-keys.outputs.modified_vault_keys }}
     secrets:
